@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcom to Eagle School</title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            gap: 20px;
+        }
+
+        .form-container {
+            flex: 1;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+
+        .form-container h2 {
+            margin-bottom: 10px;
+        }
+
+        .form-field {
+            margin-bottom: 15px;
+        }
+
+        .form-field label {
+            display: block;
+            font-weight: bold;
+        }
+
+        .form-field input,
+        .form-field textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-field input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        .output-container {
+            flex: 1;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+
+        .output-container h2 {
+            margin-bottom: 10px;
+        }
+
+        .output-text {
+            font-size: 14px;
+        }
+    </style>
+    
+  <style>
+  .picture-container {
+      display: flex;
+      gap: 20px;
+  }
+
+  .picture-frame {
+      width: 100px;
+      height: 100px;
+      border: 2px solid #333;
+      border-radius: 50%;
+      overflow: hidden;
+  }
+
+  .picture {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+</style>
+    </head>
+
+<body>
+  
+<audio id="myAudio" controls autoplay loop>
+    <source src="3_03 PM.mp3" type="audio/mp3">
+    <source src="ブルーアーカイブ Blue Archive OST 199.mp3" type="audio/mp3">
+    <source src="Escort @ フリーBGM DOVA-SYNDROME OFFICIAL YouTube CHANNEL.mp3" type="audio/mp3">
+</audio>
+
+<button id="shuffleButton">Shuffle</button>
+
+<script>
+    const audio = document.getElementById('myAudio');
+    const songs = [
+        '3_03 PM.mp3',
+        'ブルーアーカイブ Blue Archive OST 199.mp3',
+        'Escort @ フリーBGM DOVA-SYNDROME OFFICIAL YouTube CHANNEL.mp3'
+    ];
+
+    document.getElementById('shuffleButton').addEventListener('click', shuffleSongs);
+
+    function shuffleSongs() {
+        const randomIndex = Math.floor(Math.random() * songs.length);
+        audio.src = songs[randomIndex];
+        audio.play();
+    }
+</script>    
+
+<h1><b>Hi welcome to Our Website</b></h1>
+    <p>Eagle School is officially known as Pusat Kegiatan Belajar Masyarakat (PKBM) Eagle School. It operates as a community learning center, providing education to students.</p>
+    <div style="text-align: center;">
+    <video id="myVideo" src="Eagle School Profile 2023.mp4" display: block; margin: 0 auto; max-width: 100%; height: auto; controls></video>
+  </div>
+    <script>
+      const myVideo = document.getElementById('myVideo');
+      const myAudio = document.getElementById('myAudio');
+    
+      myVideo.addEventListener('play', () => {
+        // Pause the audio when the video starts playing
+        myAudio.pause();
+      });
+      myAudio.addEventListener('play', () => {
+        // Pause the audio when the video starts playing
+        myVideo.pause();
+      });
+    </script>
+    <hr class="thicker-line">
+<style>
+  .thicker-line {
+    border-top: 4px solid black; 
+  }
+</style>
+    <h2>About Us:</h2>
+    <p>We are committed to preparing our students to become resilient and independent entrepreneurs. We focus on nurturing talents, fostering an entrepreneurial spirit, and instilling a sense of nationalism in our students</p>
+    <p>Our Official youtube channel : <a href="https://www.youtube.com/@EagleSchoolSemarang/featured"><button>Youtube Channel</button></a></p>
+
+    <div class="container"> 
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+      
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src=https://editor.id/wp-content/uploads/2021/11/IMG-20211125-WA0065.jpg style="width:100%;">
+            </div>
+      
+            <div class="item">
+              <img src=https://joglonews.com/wp-content/uploads/2024/07/C-Semarang-115-1-1.jpg style="width:100%">
+            </div>
+          
+            <div class="item">
+              <img src=https://static.duta.co/wp-content/uploads/2021/11/IMG-20211125-WA0004.jpg style="width:100%">
+            </div>
+          </div>
+      
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+      <hr class="thicker-line">
+      <style>
+        .thicker-line {
+          border-top: 4px solid black; 
+        }
+      </style>
+      <h1><b>Our Facilitation</b></h1>
+      <div class="picture-container">
+        <div class="picture-frame">
+            <img class="picture" src="your-image-url-1.jpg" alt="Picture 1">
+        </div>
+        <div class="picture-frame">
+            <img class="picture" src="your-image-url-2.jpg" alt="Picture 2">
+        </div>
+        <div class="picture-frame">
+            <img class="picture" src="your-image-url-3.jpg" alt="Picture 3">
+        </div>
+    </div>
+
+    <h1>Achievements</h1>
+    <div class="picture-container">
+      <div class="picture-frame">
+          <img class="picture" src="your-image-url-1.jpg" alt="Picture 1">
+      </div>
+      <div class="picture-frame">
+          <img class="picture" src="your-image-url-2.jpg" alt="Picture 2">
+      </div>
+      <div class="picture-frame">
+          <img class="picture" src="your-image-url-3.jpg" alt="Picture 3">
+      </div>
+  </div>
+    <h1>Contact Us</h1>
+    <div class="container">
+      <div class="form-container">
+          <h2>User Info Form</h2>
+          <form id="userForm" action="#">
+              <div class="form-field">
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" required>
+              </div>
+              <div class="form-field">
+                  <label for="birthdate">Tanggal Lahir:</label>
+                  <input type="date" id="birthdate" required>
+              </div>
+              <div class="form-field">
+                  <label>Jenis Kelamin:</label>
+                  <div>
+                      <input type="radio" name="gender" value="Laki-Laki">
+                      <label for="male">Laki-Laki</label>
+                  </div>
+                  <div>
+                      <input type="radio" name="gender" value="Perempuan">
+                      <label for="female">Perempuan</label>
+                  </div>
+              </div>
+              <div class="form-field">
+                  <label for="message">Pesan:</label>
+                  <textarea id="message" rows="4"></textarea>
+              </div>
+              <input type="submit" value="Submit">
+          </form>
+      </div>
+
+      <div class="output-container">
+        <h2>Notes</h2>
+        <div class="output-text" id="output">            
+              Nama: <span id="output-name"></span><br>
+              Tanggal Lahir: <span id="output-birthdate"></span><br>
+              Jenis Kelamin: <span id="output-gender"></span><br>
+              Pesan: <span id="output-message"></span>
+          </div>
+      </div>
+  </div>
+
+  <script>
+    const form = document.getElementById('userForm');
+    const output = document.getElementById('output');
+
+    form.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        const name = document.getElementById('name').value;
+        const birthdate = document.getElementById('birthdate').value;
+        const gender = document.querySelector('input[name="gender"]:checked').value;
+        const message = document.getElementById('message').value;
+
+        // Create a new output entry
+        const outputEntry = document.createElement('div');
+        outputEntry.innerHTML = `
+            <strong>Nama:</strong> ${name}<br>
+            <strong>Tanggal Lahir:</strong> ${birthdate}<br>
+            <strong>Jenis Kelamin:</strong> ${gender}<br>
+            <strong>Pesan:</strong> ${message}<br>
+            <hr>
+        `;
+
+        // Append the new output entry
+        output.appendChild(outputEntry);
+
+        // Clear form fields
+        document.getElementById('name').value = '';
+        document.getElementById('birthdate').value = '';
+        document.querySelector('input[name="gender"]:checked').checked = false;
+        document.getElementById('message').value = '';
+    });
+</script>
+</body>
+
+
+</html>
